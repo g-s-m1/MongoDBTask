@@ -26,7 +26,6 @@ for dat1 in data1:
 
 query1={'name':'Joseph'}
 db.mycollection.delete_one(query1) #delete query
-data1=mycollection.find()
 data2=mycollection.find()
 for dat2 in data2:
     print(dat2)
