@@ -12,12 +12,10 @@ contact_information=[{'name':'Rachel','phone':'7896541233','place':'Pune'},
                      {'name':'Chandler','phone':'9632567412','place':'Hyderabad'}]
 
 mycollection.insert_many(contact_information) #insert query
-print("show")
 data=mycollection.find() #show the records
 for dat in data:
     print(dat)
 
-print("show")
 query={'name':'Joey'}
 update1={"$set":{'name':'Joseph'}}
 mycollection.update_one(query,update1) #update query
@@ -25,7 +23,6 @@ data1=mycollection.find()
 for dat1 in data1:
     print(dat1)
 
-print("show")
 query1={'name':'Joey'}
 mycollection.delete_one(query1) #delete query
 data2=mycollection.find()
